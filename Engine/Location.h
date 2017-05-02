@@ -9,6 +9,7 @@ public:
 	float GetRealPosX()const; //Returns absolute position of x in window.
 	float GetRealPosY()const; //Returns absolute position of y in window.
 	float GetDimensions()const;
+	float GetOffset()const;
 	Location operator+(Location& rhs)const;
 	void operator+=(Location& rhs);
 	Location operator-(Location& rhs)const;
@@ -23,5 +24,6 @@ private:
 	float x;
 	float y;
 	const float GridDimensions = 10;
+	const float GridOffset = 2;
 };
 

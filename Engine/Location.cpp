@@ -34,6 +34,11 @@ float Location::GetDimensions() const
 	return GridDimensions;
 }
 
+float Location::GetOffset() const
+{
+	return GridOffset;
+}
+
 Location Location::operator+(Location & rhs) const
 {
 	return Location(x + rhs.x, y + rhs.y);
