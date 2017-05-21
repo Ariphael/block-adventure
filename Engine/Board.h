@@ -8,7 +8,7 @@ public:
 	enum class GridType { Nil, Player, Obstacle };
 public:
 	Board();
-	void FillGrid(Location& pos, GridType& type);
+	void FillGrid(Location& pos, GridType type);
 	void DrawBoard(Graphics& gfx);
 	~Board();
 private:

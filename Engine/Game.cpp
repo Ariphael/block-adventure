@@ -38,7 +38,8 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
-
+	brd.FillGrid(Location(10,10),Board::GridType::Player);
+	brd.DrawBoard(gfx);
 }
 
 void Game::ComposeFrame()
